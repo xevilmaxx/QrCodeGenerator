@@ -1,0 +1,46 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+
+
+<MudGrid Justify="Justify.Center">
+
+    <MudItem xs="12">
+
+        <div class="d-flex justify-center">
+            <ImageViewer Img="@Img" Format="@Format" />
+        </div>
+
+    </MudItem>
+
+    <MudItem xs="12">
+
+        <div class="d-flex justify-center">
+            <MudButton StartIcon="@Icons.Filled.Download"
+                       Color="Color.Primary"
+                       OnClick="DownloadQr"
+                       Size="Size.Large">
+                DOWNLOAD QR
+            </MudButton>
+        </div>
+
+    </MudItem>
+
+    <MudItem xs="6">
+        <div class="d-flex justify-center">
+            <MudInput @bind-Value="@CustomQrText" Variant="Variant.Outlined" Style="min-width: 75%" />
+        </div>
+    </MudItem>
+    <MudItem xs="6">
+        <div class="d-flex justify-center">
+            <MudButton StartIcon="@Icons.Filled.GeneratingTokens"
+                       Color="Color.Primary"
+                       OnClick="GenerateCustomQr"
+                       Size="Size.Large">
+                GENERATE QR
+            </MudButton>
+        </div>
+    </MudItem>
+
+</MudGrid>

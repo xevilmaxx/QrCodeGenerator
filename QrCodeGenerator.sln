@@ -5,7 +5,9 @@ VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibQrGenerator", "LibQrGenerator\LibQrGenerator.csproj", "{E24BBBD7-7BA4-44AC-ABCF-891BD6F71CE6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QrCodeGenerator2", "QrCodeGenerator2\QrCodeGenerator2.csproj", "{79FF4DB8-C486-465B-B97D-52C7C7294C90}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QrCodeGenerator2", "QrCodeGenerator2\QrCodeGenerator2.csproj", "{79FF4DB8-C486-465B-B97D-52C7C7294C90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorQrCodeGen", "BlazorQrCodeGen\BlazorQrCodeGen.csproj", "{A4A10F39-D614-41ED-85E0-444F5B581D3B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{79FF4DB8-C486-465B-B97D-52C7C7294C90}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79FF4DB8-C486-465B-B97D-52C7C7294C90}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79FF4DB8-C486-465B-B97D-52C7C7294C90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4A10F39-D614-41ED-85E0-444F5B581D3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4A10F39-D614-41ED-85E0-444F5B581D3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4A10F39-D614-41ED-85E0-444F5B581D3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4A10F39-D614-41ED-85E0-444F5B581D3B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

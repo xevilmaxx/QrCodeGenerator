@@ -1,0 +1,50 @@
+﻿@if(Img != null)
+{
+    <MudImage Fluid="true" src="@($"data:image/{Format};base64,{Base64Img}")" />
+}
+else
+{
+    <b>No Image</b>
+}
+
+
+@code {
+
+    [Parameter]
+    public byte[] Img { get; set; }
+
+    [Parameter]
+    public string Format { get; set; }
+
+    private string Base64Img { get; set; }
+
+    //protected override async Task OnInitializedAsync()
+    //{
+    //    GenImg();
+    //}
+
+    private void GenImg()
+    {
+        if (Img != null)
+        {
+            Base64Img = Convert.ToBase64String(Img, 0, Img.Length);
+        }
+    }
+
+    //protected override bool ShouldRender()
+    //{
+    //    // Always re-render when this method is called
+    //    return true;
+    //}
+
+    /// <summary>
+    /// Needed in order to be able to listen parent variable changes, thanks chatgpt
+    /// </summary>
+    protected override void OnParametersSet()
+    {
+        // Call StateHasChanged when the parameter changes
+        base.OnParametersSet();
+        GenImg();
+    }
+
+}
