@@ -10,6 +10,7 @@ https://github.com/manuelbl/QrCodeGenerator
 * Modern Fluent API initialization (surely improvable)
 * Added ready to use Payloads (allows generation of specific QrCodes)
 * You can expand easily to support more advanced features exposed by original Library
+* Added usage sample in Blazor
 
 ## Example Syntax
 
