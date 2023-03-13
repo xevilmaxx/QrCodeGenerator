@@ -6,8 +6,8 @@ https://github.com/manuelbl/QrCodeGenerator
 
 ## Advantages
 * Select Driver even on runtime
-* Robustness in case on some platforms some drawing libraries having problems
-* Fluent API initialization (surely improvable)
+* Robustness in case on some platforms, some drawing libraries are having problems
+* Modern Fluent API initialization (surely improvable)
 * Added ready to use Payloads (allows generation of specific QrCodes)
 * You can expand easily to support more advanced features exposed by original Library
 
